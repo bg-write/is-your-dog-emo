@@ -1,0 +1,67 @@
+/*---------------- Instructions -----------------------------*/
+
+
+
+/*---------------- CSS Reset --------------------------------*/
+html {
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+   }
+   
+   /* The Universal Selector */
+   *, /* All elements*/
+   *::before, /* All ::before pseudo-elements */
+   *::after { /* All ::after pseudo-elements */
+    /* height & width will now include border & padding by default
+       but can be over-ridden as needed */
+    box-sizing: inherit;
+   }
+   
+   :root {
+    font-size: 62.5%
+   }
+
+
+
+/*---- Edit To Make Changes To The Overall Body -------------*/
+body {
+   background-color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    margin: 0;
+   }
+
+
+
+/*---- Edit To Change Different Sections Of The Body --------*/
+
+
+
+/*---- Edit To Change Individual Parts Of The Body ----------*/
+
+
+
+/*------------------- IDs (#) -------------------------------*/
+
+
+
+/*----------------- Classes (.) -----------------------------*/
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } 
+
+
+
+/*---------------- Media Queries ----------------------------*/
+
+
+
+/*----------------- And Scene -------------------------------*/
+/* and so it is
+
+-bg
+
+(project finished to initial completion and satisfaction: XXX) */
