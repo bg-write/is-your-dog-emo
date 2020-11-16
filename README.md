@@ -1,9 +1,11 @@
-# is-your-dog-emo
+# is your dog emo.
 
-## NOTE: This README.md is a work-in-progress.
+## NOTE: This README.md is a work-in-progress. README last updated: 11/16/20
 
 ### is your dog emo.
-An app that pulls a random genre name string from the Genrenator API and a random dog image from the RandomDog API to answer life's great question: Is your dog emo? Maybe your dog is into Dominican Punk Chileno. Or Canadian R&B House. Let's find out! This app was inspired by isthisbandemo.com.
+An app that pulls a random genre name string from the Genrenator API and a random dog image from the RandomDog API to answer life's great question: Is your dog emo? Maybe your dog is into Dominican Punk Chileno. Or Canadian R&B House. Let's find out!
+
+This app was inspired by isthisbandemo.com.
 
 ### Original wireframe:
 *Screenshot of my wireframe*
@@ -13,23 +15,41 @@ An app that pulls a random genre name string from the Genrenator API and a rando
 
 ### Technologies Used:
 *JavaScript
+
 *HTML
+
 *CSS
+
 *Postman
+
 *app.diagrams.net
+
 *Google Docs
+
 *Genrenator API
+
 *RandomDog API
+
 *GitHub
+
 *Git
+
 *Mac Terminal
+
 *Visual Studio Code
+
 *Google Chrome DevTools (and, like, just Google)
+
 *Bootstap
+
 *Coffee
+
 *Naps
+
 *Breaks
+
 *Calling my mom
+
 *Decent nights's sleep
 
 ### Getting Started:
@@ -38,14 +58,17 @@ An app that pulls a random genre name string from the Genrenator API and a rando
 ### A Guide To The Code:
 #### index.html
 xxx
+
 xxx
 
 #### style.css
 xxx
+
 xxx
 
 #### app.js
 xxx
+
 My favorite function: XXX
 
 ### Biggest Challenge:
