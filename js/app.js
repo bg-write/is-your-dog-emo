@@ -1,5 +1,5 @@
 console.log('is your dog emo.');
-/*---------------- Pseudo-Code (Move to README) -------------*/
+/*---------------- Pseudo-Code -------------*/
 // Add the HTML button that'll activate both APIs; when I press this button, I want both APIs to pull data and return their results to the app.
 // Add container element for the 'box' components to be appended to as children; I need two container elements, one for each API data result.
 // Add cached element references for the container elements; create the JS code that will select these two boxes and allows us to play with them and make them do things. (.getElementById, or querySelector/All.)
