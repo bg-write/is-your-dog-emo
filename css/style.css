@@ -35,7 +35,9 @@ body {
 
 
 /*---- Edit To Change Different Sections Of The Body --------*/
-
+h1 {
+   background-color: aqua;
+}
 
 
 /*---- Edit To Change Individual Parts Of The Body ----------*/

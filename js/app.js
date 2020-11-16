@@ -1,4 +1,4 @@
-console.log('santiy check');
+console.log('is your dog emo.');
 /*---------------- Pseudo-Code (Move to README) -------------*/
 // Add the HTML button that'll activate both APIs; when I press this button, I want both APIs to pull data and return their results to the app.
 // Add container element for the 'box' components to be appended to as children; I need two container elements, one for each API data result.
