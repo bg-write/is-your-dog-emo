@@ -1,6 +1,7 @@
 console.log('hi. welcome to "is your dog emo."');
 /*------------------ Project Outline -----------------------*/
 /* ROUND1: Gather The Bones */
+
 // h1 // id="headlineText" class="flex-container"
 // static string section that just reads: "is your dog emo." Every other element on the app main page will change, so I want at least one element to stay consistent and keep the eyes engaged throughout the app usage for the user. The overall app "theme" will stem from the presentation of this h1.
 
@@ -23,11 +24,11 @@ console.log('hi. welcome to "is your dog emo."');
 
 /* ROUND2: Create The Skeleton */
 // FLEXBOX
-// | id="headlineText" |
-// | id-"messageText" |
-// | id="randomDogAPIImage"  |
-// | id="genrenatorAPIText" |
-// | id="buttonArea" |
+// | h1 / id="headlineText" |
+// | h2 / id-"messageText" |
+// | div / id="randomDogAPIImage"  |
+// | div / id="genrenatorAPIText" |
+// | div id="buttonArea" |
 // 1 column, 5 rows
 
 
@@ -61,14 +62,24 @@ console.log('hi. welcome to "is your dog emo."');
 
 
 /*--------- Cached Element References -----------------------*/
-// Add cached element references for the container elements; create the JS code that will select these two boxes and allows us to play with them and make them do things. (.getElementById, or querySelector/All.)
-// Add a cached element reference for the button; create the JS code that'll select the button and allow us to play with it and make it do things. (.getElementById, or querySelector/All.)
+//// Add cached element references for the container elements; create the JS code that will select these two boxes and allows us to play with them and make them do things. (.getElementById, or querySelector/All.)
+//// Add a cached element reference for the button; create the JS code that'll select the button and allow us to play with it and make it do things. (.getElementById, or querySelector/All.)
+// I will need to make a cached element reference for my messageText, but right now I want to make sure I can return my APIs, which are my priority.
+const dogContainer = document.getElementById('randomDogAPIImage');
+const genreContainer = document.getElementById('genrenatorAPIText');
+const activateBtn = document.getElementById('activateButton');
 
 
 
 /*------------- Event Listeners -----------------------------*/
 /* <SELECT-DOM>.addEventListerner('<event-name>', <callback>); */
 // Add an event listener to the button; I want to tell JS that when the user clicks on the button, something will happen. (.addEventListener('click', ...))
+activateBtn.addEventListener('click', ()=> {
+    fetch("API")
+    .then((response) => {
+        return response.json();
+    });
+});
 
 
 

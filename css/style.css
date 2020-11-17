@@ -69,7 +69,7 @@ body {
    background-color: darkolivegreen;
 }
 
-#buttonArea { /* div holding the button */
+#buttonArea { /* div area holding the button */
    background-color: goldenrod;
 }
 
@@ -79,7 +79,7 @@ body {
 
 
 /*----------------- Classes (.) -----------------------------*/
-.flex-container { /* on everything except the button */
+.flex-container { /* on everything except the button itself */
     display: flex;
     align-items: center;
     justify-content: center;
