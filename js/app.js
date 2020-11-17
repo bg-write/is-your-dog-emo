@@ -75,11 +75,17 @@ const activateBtn = document.getElementById('activateButton');
 /* <SELECT-DOM>.addEventListerner('<event-name>', <callback>); */
 // Add an event listener to the button; I want to tell JS that when the user clicks on the button, something will happen. (.addEventListener('click', ...))
 activateBtn.addEventListener('click', ()=> {
-    fetch("API")
+    fetch("https://random.dog/woof.json")
     .then((response) => {
         return response.json();
+    })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((err) => {
+        console.log(err);
     });
-});
+}); // This returns my randomDogAPI in console log, it works!
 
 
 
