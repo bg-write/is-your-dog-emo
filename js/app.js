@@ -74,7 +74,7 @@ activateBtn.addEventListener('click', ()=> {
         return response.json();
     })
     .then((dog) => {
-        console.log(dog);
+        console.log(dog); // appendData: https://howtocreateapps.com/fetch-and-display-json-html-javascript/
     })
     .catch((err) => {
         console.log(err);
