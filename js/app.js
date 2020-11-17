@@ -74,31 +74,29 @@ activateBtn.addEventListener('click', ()=> {
         return response.json();
     })
     .then((dog) => {
-        let newDog = {};
-        newDog["dog"] = dog.dog;
-        dogs.push(newDog);
-        render();
+        console.log(dog);
     })
     .catch((err) => {
         console.log(err);
     });
 }); // This returns my randomDogAPI in console log, it works!
+// Next step: Extract objects from JSON Data and have that pop up to my screen
 
 
 
 /*----------------- Functions -------------------------------*/
-function appendDiv(dog, idx) {
-    let newDiv = document.createElement("div");
-    newDiv.innerHTML = `${dog}`;
-    container.appendChild(newDiv);
-} // Add a function to handle appending a 'card' containing the quote to the container element.
+// function appendDiv(dog, idx) {
+//     let newDiv = document.createElement("div");
+//     newDiv.innerHTML = `${dog}`;
+//     container.appendChild(newDiv);
+// } // Add a function to handle appending a 'card' containing the quote to the container element.
 
-function render() {
-    container.innerHTML = "";
-    dogs.forEach((dog, idx) => {
-      appendDiv(dog["dog"], idx);
-    });
-} 
+// function render() {
+//     container.innerHTML = "";
+//     dogs.forEach((dog, idx) => {
+//       appendDiv(dog["dog"], idx);
+//     });
+// } 
 
 
 
