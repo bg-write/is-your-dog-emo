@@ -35,9 +35,7 @@ body {
 
 
 /*---- Edit To Change Different Sections Of The Body --------*/
-h1 {
-   background-color: aqua;
-}
+
 
 
 /*---- Edit To Change Individual Parts Of The Body ----------*/
@@ -45,11 +43,33 @@ h1 {
 
 
 /*------------------- IDs (#) -------------------------------*/
+#headlineText { /* h1 */
+   background-color: aqua;
+}
 
+#messageText { /* h2 */
+   background-color: burlywood;
+}
+
+#randomDogAPIImage { /* div */
+   background-color: crimson;
+}
+
+#genrenatorAPIText { /* div */
+   background-color: darkolivegreen;
+}
+
+#buttonArea { /* div holding the button */
+   background-color: goldenrod;
+}
+
+#activateButton { /* button */
+   background-color: firebrick;
+}
 
 
 /*----------------- Classes (.) -----------------------------*/
-.flex-container {
+.flex-container { /* on everything except the button */
     display: flex;
     align-items: center;
     justify-content: center;
