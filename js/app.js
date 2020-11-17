@@ -1,11 +1,29 @@
 console.log('hi. welcome to "is your dog emo."');
-/*------------------- Project Outline -----------------------*/
+/*------------------ Project Outline -----------------------*/
 /* ROUND1: Gather The Bones */
+// h1 // id="headline" class="flex-container"
+// static string section that just reads: "is your dog emo." Every other element on the app main page will change, so I want at least one element to stay consistent and keep the eyes engaged throughout the app usage for the user. The overall app "theme" will stem from the presentation of this h1.
+
+// h2 // id="messageText" class="flex-container"
+//
+
+// div // id="genrenatorAPI" class="flex-container"
+//
+
+// div // id="randomDogAPI" class="flex-container"
+//
+
+// button // id="activateButton" class="flex-container"
+//
 
 
 
 /* ROUND2: Create The Skeleton */
-
+// FLEXBOX
+// | column | column | column | 
+// | column | column | column | 
+// | column | column | column | 
+// | column | column | column | 
 
 
 /* ROUND3: Make The Skeleton Come Alive */
