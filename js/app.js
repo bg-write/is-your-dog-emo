@@ -96,6 +96,7 @@ activateBtn.addEventListener('click', ()=> {
             console.log('yes.');
             let newMessageEmo = document.getElementById('messageText');
             newMessageEmo.innerHTML = `yes.`;
+            confetti.start(1500); // confetti!
         } else {
             console.log('no.');
             let newMessageEmo = document.getElementById('messageText');
