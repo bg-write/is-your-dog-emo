@@ -90,12 +90,12 @@ activateBtn.addEventListener('click', ()=> {
         let newGenre = document.getElementById('genrenatorAPIText');
         newGenre.innerHTML = `${genre}.`;
         // the above works fine, don't change it for now!!!
-        let newGenreString = JSON.stringify(newGenre); // turns genre name into a string, don't change
+        let newGenreString = JSON.stringify(genre); // turns genre name into a string, don't change
         let newGenreStringUpperCase = newGenreString.toUpperCase(); // uppercase the string, don't change!
-        if (!newGenreStringUpperCase.includes('POP')) {
-            console.log('not pop.');
+        if (newGenreStringUpperCase.includes('EMO')) {
+            console.log('yes.');
         } else {
-            console.log('pop.');
+            console.log('no.');
         }
     })
     .catch((err) => {
