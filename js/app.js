@@ -49,20 +49,20 @@ console.log('hi. welcome to "is your dog emo."');
 
 
 
-/*---------------- Constants --------------------------------*/
+/*--------------- Constants --------------------------------*/
 
 
 
-/*---------------- Variables --------------------------------*/
+/*--------------- Variables --------------------------------*/
 
 
 
-/*--------- Cached Element References -----------------------*/
+/*-------- Cached Element References -----------------------*/
 const activateBtn = document.getElementById('activateButton');
 
 
 
-/*------------- Event Listeners -----------------------------*/
+/*------------ Event Listeners -----------------------------*/
 activateBtn.addEventListener('click', ()=> {
     fetch("https://random.dog/woof.json")
     .then((response) => {
@@ -71,12 +71,12 @@ activateBtn.addEventListener('click', ()=> {
     .then((dog) => {
             console.log(Object.values(dog)[1]);
             let newDog = document.getElementById('randomDogAPIImage');
-            newDog.innerHTML = `<img src="${Object.values(dog)[1]}" alt="is this dog emo." width="100px" height="100px">`;
+            newDog.innerHTML = `<div id="dogImageHolder"><img src="${Object.values(dog)[1]}" alt="this dog is shy." width="350px" height="300px"></div>`;
     })
     .catch((err) => {
         console.log(err);
     });
-}); // This console.logs a new dog photo with each click of the button AND gets it to the screen! I need to edit the CSS to adjust all photos to certain sizes
+}); // This console.logs a new dog photo with each click of the button AND gets it to the screen! I need to edit the CSS to adjust all photos to certain sizes. And what to do to edit out the error images and the videos?
 
 
 // Genrenator API call to the same button!
@@ -86,22 +86,41 @@ activateBtn.addEventListener('click', ()=> {
         return response.json();
     })
     .then((genre) => {
-            console.log(genre);
-            let newGenre = document.getElementById('genrenatorAPIText');
-            newGenre.innerHTML = `${genre}.`;
+        console.log(genre);
+        let newGenre = document.getElementById('genrenatorAPIText');
+        newGenre.innerHTML = `${genre}.`;
+        // the above works fine, don't change it for now!!!
+        let newGenreString = JSON.stringify(newGenre); // turns genre name into a string, don't change
+        let newGenreStringUpperCase = newGenreString.toUpperCase(); // uppercase the string, don't change!
+        if (!newGenreStringUpperCase.includes('POP')) {
+            console.log('not pop.');
+        } else {
+            console.log('pop.');
+        }
     })
     .catch((err) => {
         console.log(err);
     });
 }); 
+// I need to go back to this and combine using Promises!!!
 
 
-/*----------------- Functions -------------------------------*/
+/*---------------- Functions -------------------------------*/
+// let emoDog = document.getElementById('genrenatorAPIText');
+// console.log(emoDog);
+// function isThisDogEmo(){
+//     if (emoDog.includes('emo')) {
+//         console.log('YES');
+//     } else {
+//         console.log('NO');
+//     }
+// }
+// console.log(isThisDogEmo());
+ // this is for returning a specific message based on if the genrenator API returns an "emo" genre
 
 
 
-
-/*----------------- And Scene -------------------------------*/
+/*---------------- And Scene -------------------------------*/
 /* and so it is
 
 -bg

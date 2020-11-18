@@ -57,6 +57,10 @@ body {
    background-color: crimson;
 } /* I need to adjust to make sure photos are as consistent as possible */
 
+#dogImageHolder { /* the actual dog image Use to edit the border! */
+   border: 10px solid black;
+}
+
 #genrenatorAPIText { /* div holding genre strings */
    background-color: darkolivegreen;
    font-size: large;
