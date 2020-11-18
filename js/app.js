@@ -111,17 +111,6 @@ activateBtn.addEventListener('click', ()=> {
 
 
 /*---------------- Functions -------------------------------*/
-// let emoDog = document.getElementById('genrenatorAPIText');
-// console.log(emoDog);
-// function isThisDogEmo(){
-//     if (emoDog.includes('emo')) {
-//         console.log('YES');
-//     } else {
-//         console.log('NO');
-//     }
-// }
-// console.log(isThisDogEmo());
- // this is for returning a specific message based on if the genrenator API returns an "emo" genre
 
 
 

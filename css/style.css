@@ -69,6 +69,13 @@ body {
    padding: 2rem;
 } /* I need to adjust to make sure photos are as consistent as possible */
 
+#emptyDogSquare { /* on a startup page, the blank square */
+   border: 10px solid black;
+   width: "350px";
+   height: "300px";
+   opacity: 0;
+}
+
 #dogImageHolder { /* the actual dog image Use to edit the border! */
    border: 10px solid black;
 }
@@ -84,7 +91,6 @@ body {
 #buttonArea { /* div area holding the button */
    background-color: goldenrod;
    border: 10px solid black;
-   padding: 2rem;
 }
 
 #activateButton { /* the actual button */
@@ -92,6 +98,7 @@ body {
    font-size: 2rem;
    border: 10px solid black;
    font-weight: bold;
+   padding: 1rem;
 }
 
 
