@@ -55,7 +55,7 @@ console.log('hi. welcome to "is your dog emo."');
 
 
 /*---------------- Variables --------------------------------*/
-const dogs = [];
+let dogs = [];
 
 
 /*--------- Cached Element References -----------------------*/
@@ -63,6 +63,7 @@ const dogs = [];
 const dogContainer = document.getElementById('randomDogAPIImage');
 
 const genreContainer = document.getElementById('genrenatorAPIText');
+
 const activateBtn = document.getElementById('activateButton');
 
 
@@ -73,28 +74,33 @@ activateBtn.addEventListener('click', ()=> {
     .then((response) => {
         return response.json();
     })
-    .then((dog) => {
-        console.log(dog); // appendData: https://howtocreateapps.com/fetch-and-display-json-html-javascript/
+    .then((data) => {
+        for(var i in data) {
+            console.log(Object.values(data)[1]);
+        }
     })
     .catch((err) => {
         console.log(err);
     });
-}); // This returns my randomDogAPI in console log, it works!
-// Next step: Extract objects from JSON Data and have that pop up to my screen
+});
 
 
 
 /*----------------- Functions -------------------------------*/
-// function appendDiv(dog, idx) {
+// function appendDiv(url) {
 //     let newDiv = document.createElement("div");
-//     newDiv.innerHTML = `${dog}`;
+//     newDiv.innerHTML = `
+//                         <div>
+//                         <p>${url}</p>
+//                         </div>
+//                         `;
 //     container.appendChild(newDiv);
-// } // Add a function to handle appending a 'card' containing the quote to the container element.
+// }
 
 // function render() {
 //     container.innerHTML = "";
-//     dogs.forEach((dog, idx) => {
-//       appendDiv(dog["dog"], idx);
+//     dogs.forEach((url) => {
+//       appendDiv(url["url"]);
 //     });
 // } 
 
