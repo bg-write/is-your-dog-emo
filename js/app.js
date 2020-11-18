@@ -75,18 +75,21 @@ activateBtn.addEventListener('click', ()=> {
         return response.json();
     })
     .then((data) => {
-        for(var i in data) {
             console.log(Object.values(data)[1]);
-        }
+            let output = document.getElementById('randomDogAPIImage');
+            output.innerHTML = Object.values(data)[1];
     })
     .catch((err) => {
         console.log(err);
     });
-});
+}); // This console.logs a new dog photo with each click of the button AND gets it to the screen!
 
 
 
 /*----------------- Functions -------------------------------*/
+// let output = document.getElementById('randomDogAPIImage');
+// output.innerHTML = data;
+
 // function appendDiv(url) {
 //     let newDiv = document.createElement("div");
 //     newDiv.innerHTML = `
