@@ -77,12 +77,12 @@ activateBtn.addEventListener('click', ()=> {
     .then((data) => {
             console.log(Object.values(data)[1]);
             let output = document.getElementById('randomDogAPIImage');
-            output.innerHTML = Object.values(data)[1];
+            output.innerHTML = `<img src="${Object.values(data)[1]}" alt="dog">`;
     })
     .catch((err) => {
         console.log(err);
     });
-}); // This console.logs a new dog photo with each click of the button AND gets it to the screen!
+}); // This console.logs a new dog photo with each click of the button AND gets it to the screen! I need to edit the CSS to adjust all photos to certain sizes
 
 
 
