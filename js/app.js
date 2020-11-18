@@ -55,7 +55,7 @@ console.log('hi. welcome to "is your dog emo."');
 
 
 /*---------------- Variables --------------------------------*/
-let dogs = [];
+
 
 
 /*--------- Cached Element References -----------------------*/
@@ -74,10 +74,10 @@ activateBtn.addEventListener('click', ()=> {
     .then((response) => {
         return response.json();
     })
-    .then((data) => {
-            console.log(Object.values(data)[1]);
-            let output = document.getElementById('randomDogAPIImage');
-            output.innerHTML = `<img src="${Object.values(data)[1]}" alt="dog">`;
+    .then((dog) => {
+            console.log(Object.values(dog)[1]);
+            let newDog = document.getElementById('randomDogAPIImage');
+            newDog.innerHTML = `<img src="${Object.values(dog)[1]}" alt="is this dog emo.">`;
     })
     .catch((err) => {
         console.log(err);
@@ -85,27 +85,25 @@ activateBtn.addEventListener('click', ()=> {
 }); // This console.logs a new dog photo with each click of the button AND gets it to the screen! I need to edit the CSS to adjust all photos to certain sizes
 
 
+// I need to figure out how to call two APIs at the same time with one click action with one button. For now, here's starting code to call and upload info from the Genrenator API
+// activateBtn.addEventListener('click', ()=> {
+    fetch("https://binaryjazz.us/wp-json/genrenator/v1/genre/")
+    .then((response) => {
+        return response.json();
+    })
+    .then((genre) => {
+            console.log(genre);
+            let newGenre = document.getElementById('genrenatorAPIText');
+            newGenre.innerHTML = `${genre}`;
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+// }); 
+
 
 /*----------------- Functions -------------------------------*/
-// let output = document.getElementById('randomDogAPIImage');
-// output.innerHTML = data;
 
-// function appendDiv(url) {
-//     let newDiv = document.createElement("div");
-//     newDiv.innerHTML = `
-//                         <div>
-//                         <p>${url}</p>
-//                         </div>
-//                         `;
-//     container.appendChild(newDiv);
-// }
-
-// function render() {
-//     container.innerHTML = "";
-//     dogs.forEach((url) => {
-//       appendDiv(url["url"]);
-//     });
-// } 
 
 
 
