@@ -71,7 +71,7 @@ activateBtn.addEventListener('click', ()=> {
     .then((dog) => {
             console.log(Object.values(dog)[1]);
             let newDog = document.getElementById('randomDogAPIImage');
-            newDog.innerHTML = `<img src="${Object.values(dog)[1]}" alt="is this dog emo.">`;
+            newDog.innerHTML = `<img src="${Object.values(dog)[1]}" alt="is this dog emo." width="100px" height="100px">`;
     })
     .catch((err) => {
         console.log(err);
