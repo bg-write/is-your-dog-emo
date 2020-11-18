@@ -58,7 +58,6 @@ console.log('hi. welcome to "is your dog emo."');
 
 
 /*--------- Cached Element References -----------------------*/
-// I will need to make a cached element reference for my messageText, but right now I want to make sure I can return my APIs, which are my priority.
 const activateBtn = document.getElementById('activateButton');
 
 
@@ -80,8 +79,8 @@ activateBtn.addEventListener('click', ()=> {
 }); // This console.logs a new dog photo with each click of the button AND gets it to the screen! I need to edit the CSS to adjust all photos to certain sizes
 
 
-// I need to figure out how to call two APIs at the same time with one click action with one button. For now, here's starting code to call and upload info from the Genrenator API
-// activateBtn.addEventListener('click', ()=> {
+// Genrenator API call to the same button!
+activateBtn.addEventListener('click', ()=> {
     fetch("https://binaryjazz.us/wp-json/genrenator/v1/genre/")
     .then((response) => {
         return response.json();
@@ -94,7 +93,7 @@ activateBtn.addEventListener('click', ()=> {
     .catch((err) => {
         console.log(err);
     });
-// }); 
+}); 
 
 
 /*----------------- Functions -------------------------------*/

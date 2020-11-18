@@ -43,29 +43,21 @@ body {
    }
 
 
-
-/*---- Edit To Change Different Sections Of The Body --------*/
-
-
-
-/*---- Edit To Change Individual Parts Of The Body ----------*/
-
-
-
+   
 /*------------------- IDs (#) -------------------------------*/
-#headlineText { /* h1 */
+#headlineText { /* h1 holding title string */
    background-color: aqua;
 }
 
-#messageText { /* h2 */
+#messageText { /* h2 holding message string */
    background-color: burlywood;
 }
 
-#randomDogAPIImage { /* div */
+#randomDogAPIImage { /* div holding dog images */
    background-color: crimson;
-}
+} /* I need to adjust to make sure photos are as consistent as possible */
 
-#genrenatorAPIText { /* div */
+#genrenatorAPIText { /* div holding genre strings */
    background-color: darkolivegreen;
    font-size: large;
 }
@@ -78,6 +70,7 @@ body {
    background-color: firebrick;
    font-size: large;
 }
+
 
 
 /*----------------- Classes (.) -----------------------------*/
