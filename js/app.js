@@ -94,8 +94,11 @@ activateBtn.addEventListener('click', ()=> {
         let newGenreStringUpperCase = newGenreString.toUpperCase(); // uppercase the string, don't change!
         if (newGenreStringUpperCase.includes('EMO')) {
             console.log('yes.');
+            let newMessageEmo = document.getElementById('messageText');
+            newMessageEmo.innerHTML = `yes.`;
         } else {
-            console.log('no.');
+            let newMessageEmo = document.getElementById('messageText');
+            newMessageEmo.innerHTML = `no.`;
         }
     })
     .catch((err) => {
