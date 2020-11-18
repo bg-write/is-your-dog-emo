@@ -67,14 +67,16 @@ body {
 
 #genrenatorAPIText { /* div */
    background-color: darkolivegreen;
+   font-size: large;
 }
 
 #buttonArea { /* div area holding the button */
    background-color: goldenrod;
 }
 
-#activateButton { /* button */
+#activateButton { /* the actual button */
    background-color: firebrick;
+   font-size: large;
 }
 
 

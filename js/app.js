@@ -50,7 +50,6 @@ console.log('hi. welcome to "is your dog emo."');
 
 
 /*---------------- Constants --------------------------------*/
-// Make my objects!
 
 
 
@@ -60,10 +59,6 @@ console.log('hi. welcome to "is your dog emo."');
 
 /*--------- Cached Element References -----------------------*/
 // I will need to make a cached element reference for my messageText, but right now I want to make sure I can return my APIs, which are my priority.
-const dogContainer = document.getElementById('randomDogAPIImage');
-
-const genreContainer = document.getElementById('genrenatorAPIText');
-
 const activateBtn = document.getElementById('activateButton');
 
 
@@ -94,7 +89,7 @@ activateBtn.addEventListener('click', ()=> {
     .then((genre) => {
             console.log(genre);
             let newGenre = document.getElementById('genrenatorAPIText');
-            newGenre.innerHTML = `${genre}`;
+            newGenre.innerHTML = `${genre}.`;
     })
     .catch((err) => {
         console.log(err);
