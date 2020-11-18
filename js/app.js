@@ -97,6 +97,7 @@ activateBtn.addEventListener('click', ()=> {
             let newMessageEmo = document.getElementById('messageText');
             newMessageEmo.innerHTML = `yes.`;
         } else {
+            console.log('no.');
             let newMessageEmo = document.getElementById('messageText');
             newMessageEmo.innerHTML = `no.`;
         }
