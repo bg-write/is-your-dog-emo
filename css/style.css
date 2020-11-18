@@ -29,10 +29,10 @@ body {
    background-color: gray;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    margin: 0;
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr;
+      margin: 0;
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
     "#headlineText"
@@ -47,14 +47,26 @@ body {
 /*------------------- IDs (#) -------------------------------*/
 #headlineText { /* h1 holding title string */
    background-color: aqua;
+   border: 10px solid black;
+   margin-bottom: 0px;
+   font-weight: bold;
+   padding: 2.5rem;
+   /* default font-size is 2.5rem, due to h1 */
 }
 
 #messageText { /* h2 holding message string */
    background-color: burlywood;
+   border: 10px solid black;
+   margin-bottom: 0px;
+   font-weight: bold;
+   padding: 2rem;
+   /* default font-size is 2rem, due to h2 */
 }
 
 #randomDogAPIImage { /* div holding dog images */
    background-color: crimson;
+   border: 10px solid black;
+   padding: 2rem;
 } /* I need to adjust to make sure photos are as consistent as possible */
 
 #dogImageHolder { /* the actual dog image Use to edit the border! */
@@ -63,16 +75,23 @@ body {
 
 #genrenatorAPIText { /* div holding genre strings */
    background-color: darkolivegreen;
-   font-size: large;
+   font-size: 2rem;
+   border: 10px solid black;
+   font-weight: bold;
+   padding: 2rem;
 }
 
 #buttonArea { /* div area holding the button */
    background-color: goldenrod;
+   border: 10px solid black;
+   padding: 2rem;
 }
 
 #activateButton { /* the actual button */
    background-color: firebrick;
-   font-size: large;
+   font-size: 2rem;
+   border: 10px solid black;
+   font-weight: bold;
 }
 
 
