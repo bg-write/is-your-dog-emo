@@ -31,13 +31,13 @@ body {
    margin: 0;
    display: grid;
    height: 100vh;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: auto auto auto auto auto;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto auto auto auto;
    grid-template-areas:
-   "#creditText #creditText #creditText"
-   "#headlineText #messageText #messageText"
-   "#randomDogAPIImage #randomDogAPIImage #buttonArea"
-   "#genrenatorAPIText #genrenatorAPIText #genrenatorAPIText";
+   "one one one"
+   "two three three"
+   "four four five"
+   "six six six";
    }
 
 /* Original layout I was happy with; backup just in case:
@@ -63,6 +63,8 @@ body {
 /*------------------- IDs (#) -------------------------------*/
 #creditText { /* h6 where I cite my sources */
    background-color: lightgray;
+   border: 10px solid black;
+   grid-area: one;
 }
 
 #headlineText { /* h1 holding title string */
@@ -71,6 +73,7 @@ body {
    margin-bottom: 0px;
    font-weight: bold;
    padding: 2.5rem;
+   grid-area: two;
    /* default font-size is 2.5rem, due to h1 */
 }
 
@@ -80,6 +83,7 @@ body {
    margin-bottom: 0px;
    font-weight: bold;
    padding: 2rem;
+   grid-area: three;
    /* default font-size is 2rem, due to h2 */
 }
 
@@ -87,6 +91,7 @@ body {
    background-color: crimson;
    border: 10px solid black;
    padding: 2rem;
+   grid-area: four;
 } /* I need to adjust to make sure photos are as consistent as possible */
 
 #emptyDogSquare { /* on a startup page, the blank square */
@@ -108,11 +113,13 @@ body {
    font-weight: bold;
    padding: 2rem;
    word-wrap: break-word;
+   grid-area: six;
 }
 
 #buttonArea { /* div area holding the button */
    background-color: goldenrod;
    border: 10px solid black;
+   grid-area: five;
 }
 
 #activateButton { /* the actual button */
