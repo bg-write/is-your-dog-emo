@@ -95,12 +95,12 @@ activateBtn.addEventListener('click', ()=> {
         if (newGenreStringUpperCase.includes('EMO')) {
             console.log('yes.');
             let newMessageEmo = document.getElementById('messageText');
-            newMessageEmo.innerHTML = `yes.`;
+            newMessageEmo.innerHTML = `(yes.)`;
             confetti.start(1500); // confetti!
         } else {
             console.log('no.');
             let newMessageEmo = document.getElementById('messageText');
-            newMessageEmo.innerHTML = `no.`;
+            newMessageEmo.innerHTML = `(no.)`;
         }
     })
     .catch((err) => {
