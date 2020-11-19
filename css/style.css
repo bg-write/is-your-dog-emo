@@ -31,14 +31,13 @@ body {
    margin: 0;
    display: grid;
    height: 100vh;
-   grid-template-columns: 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
    grid-template-rows: auto auto auto auto auto;
    grid-template-areas:
-   "#headlineText"
-   "#messageText"
-   "#randomDogAPIImage"
-   "#genrenatorAPIText"
-   "#buttonArea";
+   "#creditText #creditText #creditText"
+   "#headlineText #messageText #messageText"
+   "#randomDogAPIImage #randomDogAPIImage #buttonArea"
+   "#genrenatorAPIText #genrenatorAPIText #genrenatorAPIText";
    }
 
 /* Original layout I was happy with; backup just in case:
@@ -62,6 +61,10 @@ body {
 
    
 /*------------------- IDs (#) -------------------------------*/
+#creditText { /* h6 where I cite my sources */
+   background-color: lightgray;
+}
+
 #headlineText { /* h1 holding title string */
    background-color: aqua;
    border: 10px solid black;
