@@ -64,6 +64,7 @@ body {
 #creditText { /* h6 where I cite my sources */
    background-color: lightgray;
    border: 10px solid black;
+   margin-bottom: 0px;
    grid-area: one;
 }
 

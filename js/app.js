@@ -92,7 +92,7 @@ activateBtn.addEventListener('click', ()=> {
         // the above works fine, don't change it for now!!!
         let newGenreString = JSON.stringify(genre); // turns genre name into a string, don't change
         let newGenreStringUpperCase = newGenreString.toUpperCase(); // uppercase the string, don't change!
-        if (newGenreStringUpperCase.includes(' EMO')) {
+        if (newGenreStringUpperCase.includes('EMO')) {
             console.log('yes.');
             let newMessageEmo = document.getElementById('messageText');
             newMessageEmo.innerHTML = `(yes.)`;
