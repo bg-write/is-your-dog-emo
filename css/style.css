@@ -95,7 +95,7 @@ body {
    /* background-color: crimson; original color */
    background-color: #ffd87d; /* the cap'n jazz color */
    /* border: 10px solid black; */
-   /* padding: 2rem; */
+   padding: 2rem;
    grid-area: four;
 } /* I need to adjust to make sure photos are as consistent as possible */
 
@@ -104,11 +104,12 @@ body {
    width: "350px";
    height: "300px";
    opacity: 0;
-   /* padding: 1.5rem; */
+   padding: 1.5rem;
+   border: 10px solid white;
 }
 
 #dogImageHolder { /* the actual dog image Use to edit the border! */
-   /* border: 10px solid black; */
+   border: 10px solid white;
 }
 
 #genrenatorAPIText { /* div holding genre strings */
