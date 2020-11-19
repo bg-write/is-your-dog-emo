@@ -32,7 +32,7 @@ body {
    display: grid;
    height: 100vh;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: auto auto auto auto;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
    grid-template-areas:
    "one one one"
    "two three three"
@@ -73,7 +73,7 @@ body {
    border: 10px solid black;
    margin-bottom: 0px;
    font-weight: bold;
-   padding: 2.5rem;
+   /* padding: 2.5rem; */
    grid-area: two;
    /* default font-size is 2.5rem, due to h1 */
 }
@@ -83,7 +83,7 @@ body {
    border: 10px solid black;
    margin-bottom: 0px;
    font-weight: bold;
-   padding: 2rem;
+   /* padding: 2rem; */
    grid-area: three;
    /* default font-size is 2rem, due to h2 */
 }
@@ -91,7 +91,7 @@ body {
 #randomDogAPIImage { /* div holding dog images */
    background-color: crimson;
    border: 10px solid black;
-   padding: 2rem;
+   /* padding: 2rem; */
    grid-area: four;
 } /* I need to adjust to make sure photos are as consistent as possible */
 
@@ -100,7 +100,7 @@ body {
    width: "350px";
    height: "300px";
    opacity: 0;
-   padding: 1.5rem;
+   /* padding: 1.5rem; */
 }
 
 #dogImageHolder { /* the actual dog image Use to edit the border! */
@@ -112,7 +112,7 @@ body {
    font-size: 2rem;
    border: 10px solid black;
    font-weight: bold;
-   padding: 2rem;
+   /* padding: 2rem; */
    word-wrap: break-word;
    grid-area: six;
 }
@@ -128,7 +128,7 @@ body {
    font-size: 2rem;
    border: 10px solid black;
    font-weight: bold;
-   padding: 1rem;
+   /* padding: 1rem; */
 }
 
 
