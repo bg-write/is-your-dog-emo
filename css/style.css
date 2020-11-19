@@ -27,20 +27,37 @@ html {
 /*---- Edit To Make Changes To The Overall Body -------------*/
 body {
    background-color: gray;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-      margin: 0;
-      display: grid;
-      height: 100vh;
-      grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas:
-    "#headlineText"
-    "#messageText"
-    "#randomDogAPIImage"
-    "#genrenatorAPIText"
-    "#buttonArea";
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+   margin: 0;
+   display: grid;
+   height: 100vh;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto auto auto auto;
+   grid-template-areas:
+   "#headlineText"
+   "#messageText"
+   "#randomDogAPIImage"
+   "#genrenatorAPIText"
+   "#buttonArea";
    }
+
+/* Original layout I was happy with; backup just in case:
+body {
+   background-color: gray;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+   margin: 0;
+   display: grid;
+   height: 100vh;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto auto auto auto;
+   grid-template-areas:
+   "#headlineText"
+   "#messageText"
+   "#randomDogAPIImage"
+   "#genrenatorAPIText"
+   "#buttonArea";
+   }
+   /*
 
 
    

@@ -110,6 +110,24 @@ activateBtn.addEventListener('click', ()=> {
 // I need to go back to this and combine using Promises!!!
 
 
+
+/*---------- Event Listeners (using Promises) ---------------*/
+/*
+Turning: 
+function x(z) {
+    console.log(blah + z);
+}
+function y(err) {
+    console.log(blah + err);
+}
+create(a, x, y);
+
+Into:
+create(a).then(x, y);
+*/
+
+// If I run out of time, Icebox the idea of cleaning up my code using Promises
+
 /*---------------- Functions -------------------------------*/
 
 
