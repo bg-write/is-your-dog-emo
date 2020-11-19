@@ -62,15 +62,17 @@ body {
    
 /*------------------- IDs (#) -------------------------------*/
 #creditText { /* h6 where I cite my sources */
-   background-color: lightgray;
-   border: 10px solid black;
+   /* background-color: lightgray; original color */
+   background-color: #ffd87d; /* the cap'n jazz color */
+   /* border: 10px solid black; */
    margin-bottom: 0px;
    grid-area: one;
 }
 
-#headlineText { /* h1 holding title string */
-   background-color: aqua;
-   border: 10px solid black;
+#headlineText { /* h1 holding title string "is your dog emo."  */
+   /* background-color: aqua; original color */
+   background-color: #ffffff; /* the cap'n jazz color */
+   /* border: 10px solid white; */
    margin-bottom: 0px;
    font-weight: bold;
    /* padding: 2.5rem; */
@@ -78,9 +80,10 @@ body {
    /* default font-size is 2.5rem, due to h1 */
 }
 
-#messageText { /* h2 holding message string */
-   background-color: burlywood;
-   border: 10px solid black;
+#messageText { /* h2 holding message string, "yes" or "no" */
+   /* background-color: burlywood; original color */
+   background-color: #ffffff; /* the cap'n jazz color */
+   /* border: 10px solid white; */
    margin-bottom: 0px;
    font-weight: bold;
    /* padding: 2rem; */
@@ -89,14 +92,15 @@ body {
 }
 
 #randomDogAPIImage { /* div holding dog images */
-   background-color: crimson;
-   border: 10px solid black;
+   /* background-color: crimson; original color */
+   background-color: #ffd87d; /* the cap'n jazz color */
+   /* border: 10px solid black; */
    /* padding: 2rem; */
    grid-area: four;
 } /* I need to adjust to make sure photos are as consistent as possible */
 
 #emptyDogSquare { /* on a startup page, the blank square */
-   border: 10px solid black;
+   /* border: 10px solid black; */
    width: "350px";
    height: "300px";
    opacity: 0;
@@ -104,13 +108,14 @@ body {
 }
 
 #dogImageHolder { /* the actual dog image Use to edit the border! */
-   border: 10px solid black;
+   /* border: 10px solid black; */
 }
 
 #genrenatorAPIText { /* div holding genre strings */
-   background-color: darkolivegreen;
-   font-size: 2rem;
-   border: 10px solid black;
+   /* background-color: darkolivegreen; original color */
+   background-color: #ffffff; /* the cap'n jazz color */
+   font-size: 8rem;
+   border-bottom: 30px solid #ffd87d; /* the cap'n jazz color */
    font-weight: bold;
    /* padding: 2rem; */
    word-wrap: break-word;
@@ -118,13 +123,14 @@ body {
 }
 
 #buttonArea { /* div area holding the button */
-   background-color: goldenrod;
-   border: 10px solid black;
+   /* background-color: goldenrod; original color */
+   background-color: #ffd87d; /* the cap'n jazz color */
+   border-left: 10px solid #fdf2b0; /* the cap'n jazz color */
    grid-area: five;
 }
 
 #activateButton { /* the actual button */
-   background-color: firebrick;
+   background-color: firebrick; /* original color */
    font-size: 2rem;
    border: 10px solid black;
    font-weight: bold;
