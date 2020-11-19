@@ -32,7 +32,7 @@ body {
    display: grid;
    height: 100vh;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-rows: .75fr .5fr 3fr 3fr;
    grid-template-areas:
    "one one one"
    "two three three"
