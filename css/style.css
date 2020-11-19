@@ -107,6 +107,7 @@ body {
    border: 10px solid black;
    font-weight: bold;
    padding: 2rem;
+   word-wrap: break-word;
 }
 
 #buttonArea { /* div area holding the button */
