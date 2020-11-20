@@ -186,15 +186,21 @@ body {
 @media only screen and (max-width: 500px) {
    body {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr .5fr 1fr 1fr 1fr;
       grid-template-areas:
       "one one one" /* creditText */
-      "two three three" /* title message */
+      "two two three" /* title message */
       "four four four" /* dog */
       "five five five" /* button */
       "six six six"; /* genre */
    }
-
+   #headlineText {
+      background-color: #ffffff; /* the cap'n jazz color */
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 2rem;
+      letter-spacing: -.1rem;
+   }
 }
 
 
