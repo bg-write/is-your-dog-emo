@@ -59,7 +59,7 @@ body {
    */
 
    p { /* for editing the top credit sections */
-      color: black;
+      /* color: black; */
       padding: 10px;
    }
 
@@ -110,16 +110,14 @@ body {
    /* background-color: crimson; original color */
    background-color: #ffd87d; /* the cap'n jazz color */
    /* border: 10px solid black; */
-   padding: 2rem;
    grid-area: four;
-} /* I need to adjust to make sure photos are as consistent as possible */
+}
 
 #emptyDogSquare { /* on a startup page, the blank square */
    /* border: 10px solid black; */
    width: "350px";
    height: "300px";
    opacity: 0;
-   padding: 1.5rem;
    border: 10px solid white;
 }
 
@@ -130,10 +128,10 @@ body {
 #genrenatorAPIText { /* div holding genre strings */
    /* background-color: darkolivegreen; original color */
    background-color: #ffffff; /* the cap'n jazz color */
-   font-size: 8rem;
+   font-size: 4rem;
    border-bottom: 30px solid #ffd87d; /* the cap'n jazz color */
    font-weight: bold;
-   word-wrap: break-word;
+   overflow-wrap: break-word;
    grid-area: six;
    align-items: flex-start;
    justify-content: flex-start;
@@ -144,6 +142,7 @@ body {
    background-color: #ffd87d; /* the cap'n jazz color */
    border-left: 10px solid #fdf2b0; /* the lighter cap'n jazz color */
    grid-area: five;
+   padding: 1.5rem;
 }
 
 #activateButton { /* the actual button */
