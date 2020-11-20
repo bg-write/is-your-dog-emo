@@ -112,7 +112,6 @@ activateBtn.addEventListener('click', ()=> {
 
 
 /*---------------- Functions -------------------------------*/
-/* adjust each color in genrenatorAPIText*/
 
 
 
