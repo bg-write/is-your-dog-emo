@@ -209,8 +209,16 @@ body {
       align-items: center;
       justify-content: center;
       border-left: none;
+      padding-bottom: 2rem;
    }
-   
+   #dogImageHolder { 
+      border: 10px solid white;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0;
+      margin-top: 2rem;
+      margin-bottom: 0;
+   }
 }
 
 
