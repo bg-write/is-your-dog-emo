@@ -56,8 +56,12 @@ body {
    "#genrenatorAPIText"
    "#buttonArea";
    }
-   /*
+   */
 
+   p { /* for editing the top credit sections */
+      color: black;
+      padding: 10px;
+   }
 
    
 /*------------------- IDs (#) -------------------------------*/
@@ -70,6 +74,8 @@ body {
    align-items: flex-start;
    justify-content: flex-start;
    padding-left: 2rem;
+   padding-right: 1rem;
+   padding-bottom: 2rem;
    color: #f6b998; /* Cap darker pink */
    font-weight: bold;
 }
