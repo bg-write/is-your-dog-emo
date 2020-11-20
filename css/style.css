@@ -205,6 +205,12 @@ body {
       align-items: center;
       justify-content: center;
    }
+   #buttonArea {
+      align-items: center;
+      justify-content: center;
+      border-left: none;
+   }
+   
 }
 
 
