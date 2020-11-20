@@ -207,10 +207,8 @@ body {
       align-items: center;
       justify-content: center;
       border-bottom: none;
-      font-size: 5vw;
+      font-size: 6vw;
       overflow-wrap: anywhere;
-      letter-spacing: 0;
-      line-height: 1rem;
       padding-left: 1rem;
    }
    #buttonArea {
