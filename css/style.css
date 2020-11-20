@@ -27,7 +27,7 @@ html {
 /*---- Edit To Make Changes To The Overall Body -------------*/
 body {
    background-color: gray;
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+   font-family: monospace, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
    margin: 0;
    display: grid;
    height: 100vh;
@@ -67,6 +67,11 @@ body {
    /* border: 10px solid black; */
    margin-bottom: 0px;
    grid-area: one;
+   align-items: flex-start;
+   justify-content: flex-start;
+   padding-left: 2rem;
+   color: #f6b998; /* Cap darker pink */
+   font-weight: bold;
 }
 
 #headlineText { /* h1 holding title string "is your dog emo."  */
@@ -75,9 +80,11 @@ body {
    /* border: 10px solid white; */
    margin-bottom: 0px;
    font-weight: bold;
-   /* padding: 2.5rem; */
    grid-area: two;
    /* default font-size is 2.5rem, due to h1 */
+   align-items: flex-end;
+   justify-content: flex-start;
+   padding-left: 2rem;
 }
 
 #messageText { /* h2 holding message string, "yes" or "no" */
@@ -86,9 +93,11 @@ body {
    /* border: 10px solid white; */
    margin-bottom: 0px;
    font-weight: bold;
-   /* padding: 2rem; */
    grid-area: three;
    /* default font-size is 2rem, due to h2 */
+   align-items: flex-end;
+   justify-content: flex-start;
+   padding-left: 2rem;
 }
 
 #randomDogAPIImage { /* div holding dog images */
@@ -118,29 +127,34 @@ body {
    font-size: 8rem;
    border-bottom: 30px solid #ffd87d; /* the cap'n jazz color */
    font-weight: bold;
-   /* padding: 2rem; */
    word-wrap: break-word;
    grid-area: six;
+   align-items: flex-start;
+   justify-content: flex-start;
 }
 
 #buttonArea { /* div area holding the button */
    /* background-color: goldenrod; original color */
    background-color: #ffd87d; /* the cap'n jazz color */
-   border-left: 10px solid #fdf2b0; /* the cap'n jazz color */
+   border-left: 10px solid #fdf2b0; /* the lighter cap'n jazz color */
    grid-area: five;
 }
 
 #activateButton { /* the actual button */
-   background-color: firebrick; /* original color */
-   font-size: 2rem;
-   border: 10px solid black;
+   /* background-color: firebrick; original color */
+   /* background-color: #f79d85; the cap'n jazz pink color */
+   background-color: white;
+   font-size: 1.7rem;
+   /* border: 10px solid #fdf2b0; tan Cap color */
+   border: 10px solid #f79d85;
+   color: black;
    font-weight: bold;
    /* padding: 1rem; */
 }
 
 #activateButton:hover {
    background-color: white;
-   color: firebrick;
+   color: #9ec0e0; /* Cap blue */
 }
 
 
