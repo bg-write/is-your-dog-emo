@@ -197,9 +197,11 @@ body {
    #headlineText {
       background-color: #ffffff; /* the cap'n jazz color */
       align-items: center;
-      justify-content: flex-start;
-      padding-left: 2rem;
-      letter-spacing: -.1rem;
+      justify-content: center;
+   }
+   #messageText {
+      background-color: #ffffff; /* the cap'n jazz color */
+      align-items: center;
    }
 }
 
