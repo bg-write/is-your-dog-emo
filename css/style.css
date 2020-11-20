@@ -185,7 +185,7 @@ body {
 @media only screen and (max-width: 767px) {
    body {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: .25fr .25fr 2.25fr .5fr 1.75fr;
+      grid-template-rows: .25fr .25fr 2.5fr .25fr 1.75fr;
       grid-template-areas:
       "one one one" /* creditText */
       "two two three" /* title message */
@@ -216,8 +216,12 @@ body {
       align-items: center;
       justify-content: center;
       margin-left: 0;
-      margin-top: 2rem;
+      margin-top: 0;
       margin-bottom: 0;
+   }
+   img {
+      width: 250px;
+      height: 200px;
    }
 }
 
