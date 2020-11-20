@@ -32,7 +32,7 @@ body {
    display: grid;
    height: 100vh;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: .85fr .1fr 3.6fr 3fr;
+   grid-template-rows: .5fr .25fr 1fr 1.75fr;
    grid-template-areas:
    "one one one" /* creditText */
    "two three three" /* title message */
@@ -182,11 +182,10 @@ body {
 
 
 /*---------------- Media Queries ----------------------------*/
-/* for smallest screen size: 500px wide */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
    body {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr .5fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr .25fr 1fr 1fr 1.75fr;
       grid-template-areas:
       "one one one" /* creditText */
       "two two three" /* title message */
