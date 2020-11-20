@@ -71,7 +71,7 @@ activateBtn.addEventListener('click', ()=> {
     .then((dog) => {
             console.log(Object.values(dog)[1]);
             let newDog = document.getElementById('randomDogAPIImage');
-            newDog.innerHTML = `<div id="dogImageHolder"><img src="${Object.values(dog)[1]}" onerror="src='https://thumbs.dreamstime.com/z/funny-dog-wearing-wig-female-clothes-white-background-48441429.jpg'" alt="dog." width="350px" height="300px"></div>`;
+            newDog.innerHTML = `<div id="dogImageHolder" class="flex-container"><img src="${Object.values(dog)[1]}" onerror="src='https://thumbs.dreamstime.com/z/funny-dog-wearing-wig-female-clothes-white-background-48441429.jpg'" alt="dog." width="350px" height="300px"></div>`;
     })
     .catch((err) => {
         console.log(err);

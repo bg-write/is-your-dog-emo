@@ -63,6 +63,12 @@ body {
       padding: 10px;
    }
 
+   /* /* to further edit the photo itself!
+   img { 
+      padding-left: 10px;
+   }
+   */
+
    
 /*------------------- IDs (#) -------------------------------*/
 #creditText { /* h6 where I cite my sources */
@@ -84,6 +90,7 @@ body {
    /* background-color: aqua; original color */
    background-color: #ffffff; /* the cap'n jazz color */
    /* border: 10px solid white; */
+   margin-top: 0px;
    margin-bottom: 0px;
    font-weight: bold;
    grid-area: two;
@@ -115,14 +122,17 @@ body {
 
 #emptyDogSquare { /* on a startup page, the blank square */
    /* border: 10px solid black; */
-   width: "350px";
-   height: "300px";
+   width: "300px";
+   height: "350px";
    opacity: 0;
    border: 10px solid white;
 }
 
 #dogImageHolder { /* the actual dog image Use to edit the border! */
    border: 10px solid white;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   margin-left: 8rem;
 }
 
 #genrenatorAPIText { /* div holding genre strings */
@@ -153,8 +163,7 @@ body {
    /* border: 10px solid #fdf2b0; tan Cap color */
    border: 10px solid #f79d85;
    color: black;
-   font-weight: bold;
-   /* padding: 1rem; */
+   /* font-weight: bold; */
 }
 
 #activateButton:hover {
