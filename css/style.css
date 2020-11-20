@@ -32,7 +32,7 @@ body {
    display: grid;
    height: 100vh;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: .75fr .5fr 3fr 3fr;
+   grid-template-rows: .85fr .1fr 3.6fr 3fr;
    grid-template-areas:
    "one one one"
    "two three three"
@@ -79,6 +79,7 @@ body {
    padding-bottom: 2rem;
    color: #f6b998; /* Cap darker pink */
    font-weight: bold;
+   font-size: 1.1rem;
 }
 
 #headlineText { /* h1 holding title string "is your dog emo."  */
@@ -92,10 +93,7 @@ body {
    align-items: flex-end;
    justify-content: flex-start;
    padding-left: 2rem;
-
-   /* font-size: 8vw;
    letter-spacing: -.1rem;
-   line-height: 1rem; */
 }
 
 #messageText { /* h2 holding message string, "yes" or "no" */
@@ -144,7 +142,8 @@ body {
    align-items: flex-start;
    justify-content: flex-start;
    letter-spacing: -.1rem;
-   line-height: 5rem;
+   line-height: 7rem;
+   padding-left: 2rem;
 }
 
 #buttonArea { /* div area holding the button */
