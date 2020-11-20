@@ -63,11 +63,6 @@ body {
       padding: 10px;
    }
 
-   /* /* to further edit the photo itself!
-   img { 
-      padding-left: 10px;
-   }
-   */
 
    
 /*------------------- IDs (#) -------------------------------*/
@@ -94,7 +89,6 @@ body {
    margin-bottom: 0px;
    font-weight: bold;
    grid-area: two;
-   /* default font-size is 2.5rem, due to h1 */
    align-items: flex-end;
    justify-content: flex-start;
    padding-left: 2rem;
@@ -141,10 +135,12 @@ body {
    font-size: 4rem;
    border-bottom: 30px solid #ffd87d; /* the cap'n jazz color */
    font-weight: bold;
-   overflow-wrap: break-word;
+   overflow-wrap: anywhere;
    grid-area: six;
    align-items: flex-start;
    justify-content: flex-start;
+   letter-spacing: -.1rem;
+   line-height: 3rem;
 }
 
 #buttonArea { /* div area holding the button */
