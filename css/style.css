@@ -185,7 +185,7 @@ body {
 @media only screen and (max-width: 767px) {
    body {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: .25fr .25fr 1.5fr .25fr .5fr;
+      grid-template-rows: .25fr .25fr .5fr .25fr 1fr;
       grid-template-areas:
       "one one one" /* creditText */
       "two two three" /* title message */
