@@ -185,7 +185,7 @@ body {
 @media only screen and (max-width: 767px) {
    body {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: .25fr .25fr 3.25fr .25fr 1fr;
+      grid-template-rows: .25fr .25fr 1.5fr .25fr .5fr;
       grid-template-areas:
       "one one one" /* creditText */
       "two two three" /* title message */
@@ -207,11 +207,11 @@ body {
       align-items: center;
       justify-content: center;
       border-bottom: none;
-      font-size: 7vw;
+      font-size: 5vw;
       overflow-wrap: anywhere;
       letter-spacing: 0;
-      line-height: 7rem;
-      padding-left: 0;
+      line-height: 1rem;
+      padding-left: 1rem;
    }
    #buttonArea {
       align-items: center;
