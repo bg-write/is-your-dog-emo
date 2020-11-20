@@ -195,13 +195,15 @@ body {
       "six six six"; /* genre */
    }
    #headlineText {
-      background-color: #ffffff; /* the cap'n jazz color */
       align-items: center;
       justify-content: center;
    }
    #messageText {
-      background-color: #ffffff; /* the cap'n jazz color */
       align-items: center;
+   }
+   #genrenatorAPIText {
+      align-items: center;
+      justify-content: center;
    }
 }
 
