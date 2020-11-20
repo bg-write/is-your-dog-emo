@@ -34,10 +34,10 @@ body {
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: .85fr .1fr 3.6fr 3fr;
    grid-template-areas:
-   "one one one"
-   "two three three"
-   "four four five"
-   "six six six";
+   "one one one" /* creditText */
+   "two three three" /* title message */
+   "four four five" /* dog button */
+   "six six six"; /* genre */
    }
 
 /* Original layout I was happy with; backup just in case:
@@ -182,7 +182,20 @@ body {
 
 
 /*---------------- Media Queries ----------------------------*/
+/* for smallest screen size: 500px wide */
+@media only screen and (max-width: 500px) {
+   body {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "one one one" /* creditText */
+      "two three three" /* title message */
+      "four four four" /* dog */
+      "five five five" /* button */
+      "six six six"; /* genre */
+   }
 
+}
 
 
 /*----------------- And Scene -------------------------------*/
