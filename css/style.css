@@ -92,6 +92,10 @@ body {
    align-items: flex-end;
    justify-content: flex-start;
    padding-left: 2rem;
+
+   /* font-size: 8vw;
+   letter-spacing: -.1rem;
+   line-height: 1rem; */
 }
 
 #messageText { /* h2 holding message string, "yes" or "no" */
@@ -132,7 +136,7 @@ body {
 #genrenatorAPIText { /* div holding genre strings */
    /* background-color: darkolivegreen; original color */
    background-color: #ffffff; /* the cap'n jazz color */
-   font-size: 4rem;
+   font-size: 9vw;
    border-bottom: 30px solid #ffd87d; /* the cap'n jazz color */
    font-weight: bold;
    overflow-wrap: anywhere;
@@ -140,7 +144,7 @@ body {
    align-items: flex-start;
    justify-content: flex-start;
    letter-spacing: -.1rem;
-   line-height: 3rem;
+   line-height: 5rem;
 }
 
 #buttonArea { /* div area holding the button */
