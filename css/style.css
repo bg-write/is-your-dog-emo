@@ -138,6 +138,11 @@ body {
    /* padding: 1rem; */
 }
 
+#activateButton:hover {
+   background-color: white;
+   color: firebrick;
+}
+
 
 
 /*----------------- Classes (.) -----------------------------*/
