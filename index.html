@@ -1,35 +1,47 @@
-<!-- NOTE: Comments are made to identify each ID created in this HTML, as well as other additions to the starter HTML template -->
+<!--
+NOTE: Comments are made to identify each ID created in this HTML, as well as other additions to the starter HTML template
+
+CLASS DIRECTORY:
+flex-container - used on most IDs to help with flex styling
+
+ID DIRECTORY [in order of appearance]:
+creditText (h6) - where I give credit to how I made this app with what specific APIs
+headlineText (h1) - my static app title, "is your dog emo."
+messageText (h2) - returns a "yes." or "no." based on if genre string contains the word "emo".
+randomDogAPIImage (div) - where my randomDog API populates
+    -emptyDogSquare (div) - placeholder for randomDog API photos
+genrenatorAPIText (div) -  where my Genrenator API populates
+buttonArea (div) - the space that holds my Bootstrap button
+    -ActiveButton (button) - my Bootstrap button that actives the event listener for both APIs at the same time
+-->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>is your dog emo.</title> <!-- document title -->
-    <script defer src="js/app.js"></script> <!-- JS -->
+    <title>is your dog emo.</title>
+    <script defer src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script> <!-- confetti -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/style.css"> <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h6 id=creditText class="flex-container"> <!-- where I give credit to how I made this app with what specific APIs -->
+    <h6 id=creditText class="flex-container">
         <p>created by <a href="https://bradygerber.com/">brady gerber.</a></p>
         <p>inspired by <a href="http://isthisbandemo.com/">is this band emo</a> and <a href="https://capnjazz.bandcamp.com/album/analphabetapolothology">cap'n jazz.</a></p>
         <p>is your dog emo. is made possible by the <a href="https://binaryjazz.us/genrenator-api/">Genrenator</a> and <a href="https://github.com/bg-write/public-apis#animals">randomDog</a> APIs.</p>
         <p>know your <a href="https://www.house.gov/representatives/find-your-representative">local representatives.</a></p>
     </h6>
-    <h1 id="headlineText" class="flex-container">is your dog emo.</h1> <!-- my static app title -->
-    <h2 id="messageText" class="flex-container"></h2> <!-- returns a "yes." or "no." based on if genre string contains the word "emo". -->
-    <div id="randomDogAPIImage" class="flex-container"> <!-- where my randomDog API populates -->
-        <div id="emptyDogSquare"><img src="" width="250px" height="300px"></div> <!-- placeholder for randomDog API photos -->
+    <h1 id="headlineText" class="flex-container">is your dog emo.</h1>
+    <h2 id="messageText" class="flex-container"></h2>
+    <div id="randomDogAPIImage" class="flex-container">
+        <div id="emptyDogSquare"><img src="" width="250px" height="300px"></div>
     </div>
-    <div id="genrenatorAPIText" class="flex-container"></div> <!-- where my Genrenator API populates -->
-    <div id="buttonArea" class="flex-container"> <!-- the space that holds my Bootstrap button -->
-        <button id="activateButton" type="button" class="btn btn-primary">let's find out.</button> <!-- my Bootstrap button that actives the event listener for both APIs at the same time -->
+    <div id="genrenatorAPIText" class="flex-container"></div>
+    <div id="buttonArea" class="flex-container">
+        <button id="activateButton" type="button" class="btn btn-primary">let's find out.</button>
     </div>
-
-
-
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
