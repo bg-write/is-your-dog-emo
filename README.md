@@ -1,10 +1,10 @@
 # is your dog emo.
 
 ## Getting Started:
-View deployed app via Surge: https://is-your-dog-emo.surge.sh/
+https://is-your-dog-emo.surge.sh/
 
 ### is your dog emo.
-An app that pulls a random genre name string from the Genrenator API and a random dog image from the RandomDog API to answer life's great question: Is your dog emo? Maybe your dog is into Dominican Punk Chileno. Or Canadian R&B House. Let's find out!
+An app that pulls a random genre name from the Genrenator API and a random dog image from the RandomDog API (both found [here](https://github.com/bg-write/public-apis)) to answer life's great question: Is your dog emo? Or is your dog into Dominican Punk Chileno. Maybe Canadian R&B House. Let's find out!
 
 This app was inspired by [is this band emo](http://isthisbandemo.com/) and [Cap N' Jazz](https://capnjazz.bandcamp.com/album/analphabetapolothology).
 
@@ -18,86 +18,68 @@ This app was inspired by [is this band emo](http://isthisbandemo.com/) and [Cap 
 ![randomdog](https://i.imgur.com/JPejoUS.png)
 
 ### Final app:
+New screen
 ![new screen](https://i.imgur.com/CoEZNTM.png)
 
+After clicking button
 ![after clicking button](https://i.imgur.com/vWw0ChF.png)
 
+Mobile view
 ![mobile view](https://i.imgur.com/qVqFLti.png)
 
 ### Technologies Used:
-*JavaScript
-
-*HTML
-
-*CSS
-
-*Postman
-
-*app.diagrams.net
-
-*Genrenator API
-
-*RandomDog API
-
-*GitHub
-
-*Git
-
-*Mac Terminal
-
-*Visual Studio Code
-
-*Google Chrome DevTools (and, like, just Google)
-
-*Bootstap
-
-*Coffee
-
-*Naps
-
-*Breaks
-
-*Calling my mom
-
-*Decent nights' sleep
+*JavaScript  
+*HTML  
+*CSS  
+*Postman  
+*app.diagrams.net  
+*Genrenator API  
+*RandomDog API  
+*GitHub  
+*Git  
+*Mac Terminal  
+*Visual Studio Code  
+*Google Chrome DevTools (and, like, just Google)  
+*Bootstap  
+*Coffee  
+*Naps  
+*Breaks  
+*Calling my mom  
+*Decent nights' sleep  
 
 ### A Guide To The Code:
 #### index.html
-Incorporated external scripts and links for Bootstrap and confetti design.
-
-10 IDs, 1 Class (for flex containers).
+*Incorporated external scripts and links for Bootstrap and confetti design.
+*10 IDs, 1 Class (flex container).
 
 #### style.css
-Font Family:
--monospace
-Colors:
--#ffd87d (dull gold)
--#fdf2b0 (lighter gold)
--#f79d85 (darker pink)
--#f6b998 (lighter pink)
+*Font Family:  
+-monospace  
+*Colors:  
+-#ffd87d (dull gold)  
+-#fdf2b0 (lighter gold)  
+-#f79d85 (darker pink)  
+-#f6b998 (lighter pink)  
 -#9ec0e0 (blue)
-
-Media query accomodating a mobile-friendly max-width of 767px.
+*Media query accomodating a mobile-friendly max-width of 767px.
 
 #### app.js
-I was able to complete my JS with only one cached element reference and two event listeners targeted towards the same click event (the button). However, the JS could be more DRY if moving around my JS embraces the use of predefined constants, variables, and functions.
+Was able to complete JS with only one cached element reference and two event listeners targeting the same click event (the button). However, the JS could be more DRY by using more predefined constants, variables, and functions.
 
 My favorite function: In the genre event listener, the added JSON.stringify() was the breakthrough I needed to complete the JS.
 
 ### Biggest Challenge:
-Streamlining my event listeners to make new images and text consistent and fluid.
+Streamlining my event listeners to make new images and text consistent and fluid. Took much trial and error to get the exact results I needed.
 
 ### Key Learnings/Takeaways:
-I enjoy CSS and design more, yet I find to JS to be more rewarding (when it works!).
+I enjoy CSS and playing with design, yet I found JS to be more rewarding (when it works!).
 
-JS works, yet I'm sure there's a way to simplify the code and make it more powerful to accomodate more complex APIs. I chose two very simple (and already randomizing) APIs, and I'm curious if the JS would hold up with more complicated data.
+I'm sure there's a way to simplify the code to make it more powerful to accomodate more complex APIs. I chose two simple (and already randomizing) APIs, and I'm curious if the JS could handle more complicated data.
 
 ### Next Steps (icebox):
 *Incorporate more fluid design, especially for mobile.
-
-*More specific if statement: Right now, words like "emotion" return a "(yes.)" message.
-
-*Set up a JS function that changes the colors of a string; would like to match the genre names to match the multi-color lettering of the Cap'N Jazz album cover.
+*More specific If Statement: Right now, words like "emotion" return a "yes" message.
+*Set up a JS function that changes the colors of a few random letters of a string; would like to match the genre names to match the multi-color lettering of the Cap'N Jazz album cover.
 
 ### Original Pseudocode for app design (BIG PICTURE):
 1. Gather the bones: In my README, define all the elements that I need and their relationships to each other; which ones are just pretty to look at, which ones will interact with other elements, and how it’ll all come together.
