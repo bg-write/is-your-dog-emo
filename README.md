@@ -8,24 +8,27 @@ An app that pulls a random genre name from the Genrenator API and a random dog i
 
 This app was inspired by [is this band emo](http://isthisbandemo.com/) and [Cap N' Jazz](https://capnjazz.bandcamp.com/album/analphabetapolothology).
 
-### Original wireframe:
+### Original wireframe
 ![wireframe](https://i.imgur.com/KysXxtq.png)
 
-### Postman: Genrenator API:
+### Postman: Genrenator API
 ![genrenator](https://i.imgur.com/ckNV7bk.png)
 
-### Postman: :RandomDog API:
+### Postman: RandomDog API
 ![randomdog](https://i.imgur.com/JPejoUS.png)
 
 ### Final app:
 #### New screen
 ![new screen](https://i.imgur.com/CoEZNTM.png)
 
+
 #### After clicking button
 ![after clicking button](https://i.imgur.com/vWw0ChF.png)
 
+
 #### Mobile view
 ![mobile view](https://i.imgur.com/qVqFLti.png)
+
 
 ### Technologies Used:
 * JavaScript  
