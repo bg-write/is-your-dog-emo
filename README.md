@@ -1,14 +1,12 @@
 # is your dog emo.
 
 ## Getting Started:
-*Include a link to my deployed app and any instructions I deem important. During my presentation, I need to go to my GitHub and click on this link to share with everyone.*
-
-###### NOTE: This README.md is a work-in-progress. README last updated: 11/16/20
+View deployed app via Surge: https://is-your-dog-emo.surge.sh/
 
 ### is your dog emo.
 An app that pulls a random genre name string from the Genrenator API and a random dog image from the RandomDog API to answer life's great question: Is your dog emo? Maybe your dog is into Dominican Punk Chileno. Or Canadian R&B House. Let's find out!
 
-This app was inspired by isthisbandemo.com.
+This app was inspired by [is this band emo](http://isthisbandemo.com/) and [Cap N' Jazz](https://capnjazz.bandcamp.com/album/analphabetapolothology).
 
 ### Original wireframe:
 ![wireframe](https://i.imgur.com/KysXxtq.png)
@@ -20,7 +18,11 @@ This app was inspired by isthisbandemo.com.
 ![randomdog](https://i.imgur.com/JPejoUS.png)
 
 ### Final app:
-*Screenshot(s): Images of the final actual app, beginning, middle, and end of usage, and another usage.*
+![new screen](https://i.imgur.com/CoEZNTM.png)
+
+![after clicking button](https://i.imgur.com/vWw0ChF.png)
+
+![mobile view](https://i.imgur.com/qVqFLti.png)
 
 ### Technologies Used:
 *JavaScript
@@ -32,8 +34,6 @@ This app was inspired by isthisbandemo.com.
 *Postman
 
 *app.diagrams.net
-
-*Google Docs
 
 *Genrenator API
 
@@ -59,32 +59,45 @@ This app was inspired by isthisbandemo.com.
 
 *Calling my mom
 
-*Decent nights's sleep
+*Decent nights' sleep
 
 ### A Guide To The Code:
 #### index.html
-xxx
+Incorporated external scripts and links for Bootstrap and confetti design.
 
-xxx
+10 IDs, 1 Class (for flex containers).
 
 #### style.css
-xxx
+Font Family:
+-monospace
+Colors:
+-#ffd87d (dull gold)
+-#fdf2b0 (lighter gold)
+-#f79d85 (darker pink)
+-#f6b998 (lighter pink)
+-#9ec0e0 (blue)
 
-xxx
+Media query accomodating a mobile-friendly max-width of 767px.
 
 #### app.js
-xxx
+I was able to complete my JS with only one cached element reference and two event listeners targeted towards the same click event (the button). However, the JS could be more DRY if moving around my JS embraces the use of predefined constants, variables, and functions.
 
-My favorite function: XXX
+My favorite function: In the genre event listener, the added JSON.stringify() was the breakthrough I needed to complete the JS.
 
 ### Biggest Challenge:
-XXX
+Streamlining my event listeners to make new images and text consistent and fluid.
 
 ### Key Learnings/Takeaways:
-XXX
+I enjoy CSS and design more, yet I find to JS to be more rewarding (when it works!).
 
-### Next Steps:
-*Planned future enhancements (icebox items).*
+JS works, yet I'm sure there's a way to simplify the code and make it more powerful to accomodate more complex APIs. I chose two very simple (and already randomizing) APIs, and I'm curious if the JS would hold up with more complicated data.
+
+### Next Steps (icebox):
+*Incorporate more fluid design, especially for mobile.
+
+*More specific if statement: Right now, words like "emotion" return a "(yes.)" message.
+
+*Set up a JS function that changes the colors of a string; would like to match the genre names to match the multi-color lettering of the Cap'N Jazz album cover.
 
 ### Original Pseudocode for app design (BIG PICTURE):
 1. Gather the bones: In my README, define all the elements that I need and their relationships to each other; which ones are just pretty to look at, which ones will interact with other elements, and how it’ll all come together.
