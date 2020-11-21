@@ -20,14 +20,17 @@ This app was inspired by [is this band emo](http://isthisbandemo.com/) and [Cap 
 ### Final app:
 #### New screen
 ![new screen](https://i.imgur.com/CoEZNTM.png)
+--
 
 
 #### After clicking button
 ![after clicking button](https://i.imgur.com/vWw0ChF.png)
+--
 
 
 #### Mobile view
 ![mobile view](https://i.imgur.com/qVqFLti.png)
+--
 
 
 ### Technologies Used:
@@ -82,13 +85,13 @@ Streamlining my event listeners to make new images and text consistent and fluid
 * More specific If Statement: Right now, words like "emotion" return a "yes" message.
 * Set up a JS function that changes the colors of a few random letters of a string; would like to match the genre names to match the multi-color lettering of the Cap'N Jazz album cover.
 
-### Original Pseudocode for app design (BIG PICTURE):
+### Original pseudocode for app design (BIG PICTURE):
 1. Gather the bones: In my README, define all the elements that I need and their relationships to each other; which ones are just pretty to look at, which ones will interact with other elements, and how it’ll all come together.
 2. Put together the bones: First draft of my HTML, CSS, and JS code to put everything into my workspace.
 3. Make the skeleton come alive: Second draft of HTML, CSS, and JS code, focusing on JS logic and make the browser do what I want it to do.
 4. Make the skeleton spooky: Third and final draft of HTML, CSS, and JS code, focusing on CSS responsive design and overall simple, DRY coding.
 
-### Original Pseudocode for the app’s design (THE ACTUAL STEPS):
+### Original pseudocode (THE ACTUAL STEPS):
 1. Add the HTML button that'll activate both APIs; when I press this button, I want both APIs to pull data and return their results to the app.
 2. Add container element for the 'box' components to be appended to as children; I need two container elements, one for each API data result.
 3. Add cached element references for the container elements; create the JS code that will select these two boxes and allow us to play with them and make them do things.
