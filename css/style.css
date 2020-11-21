@@ -1,4 +1,13 @@
-/* NOTE: Comments are made to identify and detail elements and additions not previous identified in HTML sheet */
+/* 
+STYLE DIRECTORY [for general reference]:
+font-family: monospace
+background-color: #ffd87d (dull gold)
+background-color: white
+border-left: #fdf2b0 (lighter gold)
+border: #f79d85 (darker pink)
+color: #f6b998 (lighter pink)
+color: #9ec0e0 (blue)
+*/
 
 /*---------------- CSS Reset --------------------------------*/
 html {
@@ -7,13 +16,10 @@ html {
     margin: 0;
    }
    
-   /* The Universal Selector */
-   *, /* All elements*/
-   *::before, /* All ::before pseudo-elements */
-   *::after { /* All ::after pseudo-elements */
-    /* height & width will now include border & padding by default
-       but can be over-ridden as needed */
-    box-sizing: inherit;
+   *,
+   *::before,
+   *::after { 
+      box-sizing: inherit;
    }
    
    :root {
@@ -33,31 +39,12 @@ body {
    grid-template-rows: .5fr .1fr 1.6fr 1.39fr;
    grid-template-areas:
    "one one one" /* creditText */
-   "two three three" /* title message */
-   "four four five" /* dog button */
+   "two three three" /* title, message */
+   "four four five" /* dog, button */
    "six six six"; /* genre */
    }
 
-/* Original layout I was happy with; backup just in case:
-body {
-   background-color: gray;
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-   margin: 0;
-   display: grid;
-   height: 100vh;
-   grid-template-columns: 1fr;
-   grid-template-rows: auto auto auto auto auto;
-   grid-template-areas:
-   "#headlineText"
-   "#messageText"
-   "#randomDogAPIImage"
-   "#genrenatorAPIText"
-   "#buttonArea";
-   }
-   */
-
-   p { /* for editing the top credit sections */
-      /* color: black; */
+   p { /* for editing the top credit sections of my creditText */
       padding: 10px;
    }
 
@@ -65,56 +52,47 @@ body {
    
 /*------------------- IDs (#) -------------------------------*/
 #creditText { /* h6 where I cite my sources */
-   /* background-color: lightgray; original color */
-   background-color: #ffd87d; /* the cap'n jazz color */
+   background-color: #ffd87d;
+   color: #f6b998;
+   font-weight: bold;
+   font-size: 1.1rem;
+   padding-left: 2rem;
+   padding-right: 1rem;
+   padding-bottom: 2rem;
    margin-bottom: 0px;
    grid-area: one;
    align-items: flex-start;
    justify-content: flex-start;
-   padding-left: 2rem;
-   padding-right: 1rem;
-   padding-bottom: 2rem;
-   color: #f6b998; /* Cap darker pink */
-   font-weight: bold;
-   font-size: 1.1rem;
 }
 
 #headlineText { /* h1 holding title string "is your dog emo."  */
-   /* background-color: aqua; original color */
-   background-color: #ffffff; /* the cap'n jazz color */
-   /* border: 10px solid white; */
+   background-color: white;
+   font-weight: bold;
+   letter-spacing: -.1rem;
+   padding-left: 2rem;
    margin-top: 0px;
    margin-bottom: 0px;
-   font-weight: bold;
    grid-area: two;
    align-items: flex-end;
    justify-content: flex-start;
-   padding-left: 2rem;
-   letter-spacing: -.1rem;
 }
 
 #messageText { /* h2 holding message string, "yes" or "no" */
-   /* background-color: burlywood; original color */
-   background-color: #ffffff; /* the cap'n jazz color */
-   /* border: 10px solid white; */
-   margin-bottom: 0px;
+   background-color: white;
    font-weight: bold;
+   padding-left: 2rem;
+   margin-bottom: 0px;
    grid-area: three;
-   /* default font-size is 2rem, due to h2 */
    align-items: flex-end;
    justify-content: flex-start;
-   padding-left: 2rem;
 }
 
 #randomDogAPIImage { /* div holding dog images */
-   /* background-color: crimson; original color */
-   background-color: #ffd87d; /* the cap'n jazz color */
-   /* border: 10px solid black; */
+   background-color: #ffd87d;
    grid-area: four;
 }
 
 #emptyDogSquare { /* on a startup page, the blank square */
-   /* border: 10px solid black; */
    width: "300px";
    height: "350px";
    opacity: 0;
@@ -129,43 +107,37 @@ body {
 }
 
 #genrenatorAPIText { /* div holding genre strings */
-   /* background-color: darkolivegreen; original color */
-   background-color: #ffffff; /* the cap'n jazz color */
+   background-color: white;
    font-size: 9vw;
-   border-bottom: 30px solid #ffd87d; /* the cap'n jazz color */
    font-weight: bold;
    overflow-wrap: anywhere;
+   letter-spacing: -.1rem;
+   line-height: 7rem;
+   border-bottom: 30px solid #ffd87d;
+   padding-left: 2rem;
    grid-area: six;
    align-items: flex-start;
    justify-content: flex-start;
-   letter-spacing: -.1rem;
-   line-height: 7rem;
-   padding-left: 2rem;
 }
 
 #buttonArea { /* div area holding the button */
-   /* background-color: goldenrod; original color */
-   background-color: #ffd87d; /* the cap'n jazz color */
-   border-left: 10px solid #fdf2b0; /* the lighter cap'n jazz color */
-   grid-area: five;
+   background-color: #ffd87d;
+   border-left: 10px solid #fdf2b0;
    padding: 1.5rem;
+   grid-area: five;
 }
 
 #activateButton { /* the actual button */
-   /* background-color: firebrick; original color */
-   /* background-color: #f79d85; the cap'n jazz pink color */
    background-color: white;
-   font-size: 1.7rem;
-   /* border: 10px solid #fdf2b0; tan Cap color */
-   border: 10px solid #f79d85;
    color: black;
    font-weight: bold;
-   /* font-weight: bold; */
+   font-size: 1.7rem;
+   border: 10px solid #f79d85;
 }
 
-#activateButton:hover {
+#activateButton:hover { /* what happens when you hover over the button */
    background-color: white;
-   color: #9ec0e0; /* Cap blue */
+   color: #9ec0e0;
 }
 
 
@@ -186,48 +158,55 @@ body {
       grid-template-rows: .25fr .25fr .5fr .25fr 1fr;
       grid-template-areas:
       "one one one" /* creditText */
-      "two two three" /* title message */
+      "two two three" /* title, message */
       "four four four" /* dog */
       "five five five" /* button */
       "six six six"; /* genre */
    }
+
    #creditText { 
       padding-bottom: .5rem;
    }
+
    #headlineText {
       align-items: center;
       justify-content: center;
    }
+
    #messageText {
       align-items: center;
    }
+
    #genrenatorAPIText {
-      align-items: center;
-      justify-content: center;
-      border-bottom: none;
       font-size: 6vw;
       overflow-wrap: anywhere;
+      border-bottom: none;
       padding-left: 1rem;
-   }
-   #buttonArea {
       align-items: center;
       justify-content: center;
+   }
+
+   #buttonArea {
       border-left: none;
       padding-bottom: 2rem;
-   }
-   #dogImageHolder { 
-      border: 10px solid white;
       align-items: center;
       justify-content: center;
-      margin-left: 0;
+   }
+
+   #dogImageHolder { 
       margin-top: 2rem;
       margin-bottom: 0;
+      margin-left: 0;
+      align-items: center;
+      justify-content: center;
    }
+
    img {
       width: 250px;
       height: 200px;
    }
 }
+
 
 
 /*----------------- And Scene -------------------------------*/
