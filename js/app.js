@@ -1,5 +1,5 @@
 console.log('hi. welcome to "is your dog emo."');
-/*------------------ Project Outline -----------------------*/
+/*------------------ Project Outline (for planning) -----------------------*/
 /* ROUND1: Gather The Bones */
 
 // h1 // id="headlineText" class="flex-container"
@@ -34,18 +34,11 @@ console.log('hi. welcome to "is your dog emo."');
 
 
 /* ROUND3: Make The Skeleton Come Alive */
-
+// See below
 
 
 /* ROUND4: Make The Skeleton Spooky */
-
-
-
-/*----------- Transparency Report ----------*/
-
-
-
-/*-------- Questions Upon Completion -------*/
+// see below
 
 
 
@@ -121,4 +114,4 @@ activateBtn.addEventListener('click', ()=> {
 
 -bg
 
-(project finished to initial completion and satisfaction: XXX) */
+*/
