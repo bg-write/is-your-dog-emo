@@ -11,20 +11,20 @@ color: #9ec0e0 (blue)
 
 /*---------------- CSS Reset --------------------------------*/
 html {
-    box-sizing: border-box;
-    height: 100vh;
-    margin: 0;
-   }
+   box-sizing: border-box;
+   height: 100vh;
+   margin: 0;
+}
    
-   *,
-   *::before,
-   *::after { 
-      box-sizing: inherit;
-   }
+*,
+*::before,
+*::after { 
+   box-sizing: inherit;
+}
    
-   :root {
-    font-size: 62.5%
-   }
+:root {
+   font-size: 62.5%
+}
 
 
 
@@ -42,11 +42,11 @@ body {
    "two three three" /* title, message */
    "four four five" /* dog, button */
    "six six six"; /* genre */
-   }
+}
 
-   p { /* for editing the top credit sections of my creditText */
-      padding: 10px;
-   }
+p { /* for editing the top credit sections of my creditText */
+   padding: 10px;
+}
 
 
    
@@ -144,10 +144,10 @@ body {
 
 /*----------------- Classes (.) -----------------------------*/
 .flex-container { /* on everything except the button itself */
-    display: flex;
-    align-items: center;
-    justify-content: center;
- } 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+} 
 
 
 
