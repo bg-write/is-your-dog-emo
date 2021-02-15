@@ -1,215 +1,200 @@
-/* 
-STYLE DIRECTORY [for general reference]:
-font-family: monospace
-background-color: #ffd87d (dull gold)
-background-color: white
-border-left: #fdf2b0 (lighter gold)
-border: #f79d85 (darker pink)
-color: #f6b998 (lighter pink)
-color: #9ec0e0 (blue)
-*/
-
-/*---------------- CSS Reset --------------------------------*/
 html {
-   box-sizing: border-box;
-   height: 100vh;
-   margin: 0;
+	box-sizing: border-box;
+	height: 100vh;
+	margin: 0;
 }
-   
+
 *,
 *::before,
-*::after { 
-   box-sizing: inherit;
+*::after {
+	box-sizing: inherit;
 }
-   
+
 :root {
-   font-size: 62.5%
+	font-size: 62.5%;
 }
 
-
-
-/*---- Edit To Make Changes To The Overall Body -------------*/
 body {
-   background-color: gray;
-   font-family: monospace, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-   margin: 0;
-   display: grid;
-   height: 100vh;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: .5fr .1fr 1.6fr 1.39fr;
-   grid-template-areas:
-   "one one one" /* creditText */
-   "two three three" /* title, message */
-   "four four five" /* dog, button */
-   "six six six"; /* genre */
+	background-color: gray;
+	font-family: monospace, system-ui, -apple-system, BlinkMacSystemFont,
+		'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+		sans-serif;
+	margin: 0;
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 0.1fr 1.6fr 1.39fr;
+	grid-template-areas:
+		'one one one' /* creditText */
+		'two three three' /* title, message */
+		'four four five' /* dog, button */
+		'six six six'; /* genre */
 }
 
-p { /* for editing the top credit sections of my creditText */
-   padding: 10px;
+p {
+	padding: 10px;
 }
 
-
-   
 /*------------------- IDs (#) -------------------------------*/
-#creditText { /* h6 where I cite my sources */
-   background-color: #ffd87d;
-   color: #f6b998;
-   font-weight: bold;
-   font-size: 1.1rem;
-   padding-left: 2rem;
-   padding-right: 1rem;
-   padding-bottom: 2rem;
-   margin-bottom: 0px;
-   grid-area: one;
-   align-items: flex-start;
-   justify-content: flex-start;
+#creditText {
+	/* h6 where I cite my sources */
+	background-color: #ffd87d;
+	color: #f6b998;
+	font-weight: bold;
+	font-size: 1.1rem;
+	padding-left: 2rem;
+	padding-right: 1rem;
+	padding-bottom: 2rem;
+	margin-bottom: 0px;
+	grid-area: one;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
-#headlineText { /* h1 holding title string "is your dog emo."  */
-   background-color: white;
-   font-weight: bold;
-   letter-spacing: -.1rem;
-   padding-left: 2rem;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   grid-area: two;
-   align-items: flex-end;
-   justify-content: flex-start;
+#headlineText {
+	/* h1 holding title string "is your dog emo."  */
+	background-color: white;
+	font-weight: bold;
+	letter-spacing: -0.1rem;
+	padding-left: 2rem;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	grid-area: two;
+	align-items: flex-end;
+	justify-content: flex-start;
 }
 
-#messageText { /* h2 holding message string, "yes" or "no" */
-   background-color: white;
-   font-weight: bold;
-   padding-left: 2rem;
-   margin-bottom: 0px;
-   grid-area: three;
-   align-items: flex-end;
-   justify-content: flex-start;
+#messageText {
+	/* h2 holding message string, "yes" or "no" */
+	background-color: white;
+	font-weight: bold;
+	padding-left: 2rem;
+	margin-bottom: 0px;
+	grid-area: three;
+	align-items: flex-end;
+	justify-content: flex-start;
 }
 
-#randomDogAPIImage { /* div holding dog images */
-   background-color: #ffd87d;
-   grid-area: four;
+#randomDogAPIImage {
+	/* div holding dog images */
+	background-color: #ffd87d;
+	grid-area: four;
 }
 
-#emptyDogSquare { /* on a startup page, the blank square */
-   width: "300px";
-   height: "350px";
-   opacity: 0;
-   border: 10px solid white;
+#emptyDogSquare {
+	/* on a startup page, the blank square */
+	width: '300px';
+	height: '350px';
+	opacity: 0;
+	border: 10px solid white;
 }
 
-#dogImageHolder { /* the actual dog image Use to edit the border! */
-   border: 10px solid white;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
-   margin-left: 8rem;
+#dogImageHolder {
+	/* the actual dog image Use to edit the border! */
+	border: 10px solid white;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 8rem;
 }
 
-#genrenatorAPIText { /* div holding genre strings */
-   background-color: white;
-   font-size: 9vw;
-   font-weight: bold;
-   overflow-wrap: anywhere;
-   letter-spacing: -.1rem;
-   line-height: 7rem;
-   border-bottom: 30px solid #ffd87d;
-   padding-left: 2rem;
-   grid-area: six;
-   align-items: flex-start;
-   justify-content: flex-start;
+#genrenatorAPIText {
+	/* div holding genre strings */
+	background-color: white;
+	font-size: 9vw;
+	font-weight: bold;
+	overflow-wrap: anywhere;
+	letter-spacing: -0.1rem;
+	line-height: 7rem;
+	border-bottom: 30px solid #ffd87d;
+	padding-left: 2rem;
+	grid-area: six;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
-#buttonArea { /* div area holding the button */
-   background-color: #ffd87d;
-   border-left: 10px solid #fdf2b0;
-   padding: 1.5rem;
-   grid-area: five;
+#buttonArea {
+	/* div area holding the button */
+	background-color: #ffd87d;
+	border-left: 10px solid #fdf2b0;
+	padding: 1.5rem;
+	grid-area: five;
 }
 
-#activateButton { /* the actual button */
-   background-color: white;
-   color: black;
-   font-weight: bold;
-   font-size: 1.7rem;
-   border: 10px solid #f79d85;
+#activateButton {
+	/* the actual button */
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	font-size: 1.7rem;
+	border: 10px solid #f79d85;
 }
 
-#activateButton:hover { /* what happens when you hover over the button */
-   background-color: white;
-   color: #9ec0e0;
+#activateButton:hover {
+	/* what happens when you hover over the button */
+	background-color: white;
+	color: #9ec0e0;
 }
-
-
 
 /*----------------- Classes (.) -----------------------------*/
-.flex-container { /* on everything except the button itself */
-   display: flex;
-   align-items: center;
-   justify-content: center;
-} 
-
-
+.flex-container {
+	/* on everything except the button itself */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 /*---------------- Media Queries ----------------------------*/
 @media only screen and (max-width: 767px) {
-   body {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: .25fr .25fr .5fr .25fr 1fr;
-      grid-template-areas:
-      "one one one" /* creditText */
-      "two two three" /* title, message */
-      "four four four" /* dog */
-      "five five five" /* button */
-      "six six six"; /* genre */
-   }
+	body {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 0.25fr 0.25fr 0.5fr 0.25fr 1fr;
+		grid-template-areas:
+			'one one one' /* creditText */
+			'two two three' /* title, message */
+			'four four four' /* dog */
+			'five five five' /* button */
+			'six six six'; /* genre */
+	}
 
-   #creditText { 
-      padding-bottom: .5rem;
-   }
+	#creditText {
+		padding-bottom: 0.5rem;
+	}
 
-   #headlineText {
-      align-items: center;
-      justify-content: center;
-   }
+	#headlineText {
+		align-items: center;
+		justify-content: center;
+	}
 
-   #messageText {
-      align-items: center;
-   }
+	#messageText {
+		align-items: center;
+	}
 
-   #genrenatorAPIText {
-      font-size: 6vw;
-      overflow-wrap: anywhere;
-      border-bottom: none;
-      padding-left: 1rem;
-      align-items: center;
-      justify-content: center;
-   }
+	#genrenatorAPIText {
+		font-size: 6vw;
+		overflow-wrap: anywhere;
+		border-bottom: none;
+		padding-left: 1rem;
+		align-items: center;
+		justify-content: center;
+	}
 
-   #buttonArea {
-      border-left: none;
-      padding-bottom: 2rem;
-      align-items: center;
-      justify-content: center;
-   }
+	#buttonArea {
+		border-left: none;
+		padding-bottom: 2rem;
+		align-items: center;
+		justify-content: center;
+	}
 
-   #dogImageHolder { 
-      margin-top: 2rem;
-      margin-bottom: 0;
-      margin-left: 0;
-      align-items: center;
-      justify-content: center;
-   }
+	#dogImageHolder {
+		margin-top: 2rem;
+		margin-bottom: 0;
+		margin-left: 0;
+		align-items: center;
+		justify-content: center;
+	}
 
-   img {
-      width: 250px;
-      height: 200px;
-   }
+	img {
+		width: 250px;
+		height: 200px;
+	}
 }
-
-
-
-/*----------------- And Scene -------------------------------*/
-/* and so it is
-
--bg

@@ -1,63 +1,43 @@
 /*-------- Cached Element References -----------------------*/
-// actives the button to make it ready for an event listener
 const activateBtn = document.getElementById('activateButton');
 
 /*------------ Event Listeners -----------------------------*/
-// event listener connecting the button to the randomDog API; when you click the button, a random dog photo shows up on the browser
 activateBtn.addEventListener('click', () => {
-	// when you click on the button, the following event happens ...
-	fetch('https://random.dog/woof.json') // fetch the randomDog API ...
+	fetch('https://random.dog/woof.json')
 		.then((response) => {
-			// and then return it as a promise (a response) ...
-			return response.json(); // ... and then return the extracted JSON content from the response.
+			return response.json();
 		})
 		.then((dog) => {
-			// then we do the following to the promise, now defined as "dog" ...
-			let newDog = document.getElementById('randomDogAPIImage'); // create "newDog" and have it set to ID randomDogAPIImage ...
+			let newDog = document.getElementById('randomDogAPIImage');
 			newDog.innerHTML = `<div id="dogImageHolder" class="flex-container"><img src="${
 				Object.values(dog)[1]
-			}" onerror="src='https://thumbs.dreamstime.com/z/funny-dog-wearing-wig-female-clothes-white-background-48441429.jpg'" alt="dog." width="350px" height="300px"></div>`; // In "newDog", we now update it with a new div, which we ID as "dogImageHolder" and link it to the value (url) of the API. Also added a default stock photo image to replace any broken links, set the alt text to "dog." and gave it a specific widthe and height.
+			}" onerror="src='https://thumbs.dreamstime.com/z/funny-dog-wearing-wig-female-clothes-white-background-48441429.jpg'" alt="dog." width="350px" height="300px"></div>`;
 		})
 		.catch((err) => {
-			// finally, we catch any errors ...
-			console.log(err); // and upload them to our console.
+			console.log(err);
 		});
 });
 
-// event listener connecting the button to the Genrenator API; when you click the button, a random genre string shows up on the browser
 activateBtn.addEventListener('click', () => {
-	// when you click on the button, the following event happens ...
-	fetch('https://binaryjazz.us/wp-json/genrenator/v1/genre/') // fetch the Genrenator API ...
+	fetch('https://binaryjazz.us/wp-json/genrenator/v1/genre/')
 		.then((response) => {
-			// and then return it as a promise (a response) ...
-			return response.json(); // ... and then return the extracted JSON content from the response.
+			return response.json();
 		})
 		.then((genre) => {
-			// then we do the following to the promise, now defined as "genre" ..
-			let newGenre = document.getElementById('genrenatorAPIText'); // create "newGenre" and have it set to ID genrenatorAPIText ...
-			newGenre.innerHTML = `${genre}.`; // populate "newGenre" with the API ...
-			let newGenreString = JSON.stringify(genre); // turn genre into string ...
-			let newGenreStringUpperCase = newGenreString.toUpperCase(); // uppercase genre ...
+			let newGenre = document.getElementById('genrenatorAPIText');
+			newGenre.innerHTML = `${genre}.`;
+			let newGenreString = JSON.stringify(genre);
+			let newGenreStringUpperCase = newGenreString.toUpperCase();
 			if (newGenreStringUpperCase.includes('EMO')) {
-				// and establish new if statement; if the genre includes "EMO" ...
-				let newMessageEmo = document.getElementById('messageText'); // create "newMessageEmo" and have it set to the ID messageText ...
-				newMessageEmo.innerHTML = `(yes.)`; // and write in that message area "(yes.)" ...
-				confetti.start(1500); // and add confetti!
+				let newMessageEmo = document.getElementById('messageText');
+				newMessageEmo.innerHTML = `(yes.)`;
+				confetti.start(1500);
 			} else {
-				// if the genre does not include "EMO" ...
-				let newMessageEmo = document.getElementById('messageText'); // I still want to create the newMessageEmo ...
-				newMessageEmo.innerHTML = `(no.)`; // but this time, I want to get the message to return "(no.)"
+				let newMessageEmo = document.getElementById('messageText');
+				newMessageEmo.innerHTML = `(no.)`;
 			}
 		})
 		.catch((err) => {
-			// finally, we catch any errors ...
-			console.log(err); // and upload them to our console.
+			console.log(err);
 		});
 });
-
-/*---------------- And Scene -------------------------------*/
-/* and so it is
-
--bg
-
-*/
